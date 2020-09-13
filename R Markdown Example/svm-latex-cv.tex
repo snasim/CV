@@ -206,7 +206,8 @@ $if(fontawesome)$\usepackage{fontawesome}$endif$
 % Always load hyperref last.
 \usepackage{hyperref}
 $if(colorlinks)$
-\PassOptionsToPackage{usenames,dvipsnames}{color} % color is loaded by hyperref
+\usepackage[dvipsnames]{xcolor}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor} % color is loaded by hyperref
 $endif$
 
 \hypersetup{unicode=true,
